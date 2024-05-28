@@ -10,14 +10,11 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "lvgl.h"
-#include "port/lv_port_disp.h"
-#include "port/lv_port_indev.h"
 #include "lvgl/demos/lv_demos.h"
-#include "hal_data.h"
 #include "r_cmt_rx_if.h"
 #include "user_task.h"
+#include "board_init.h"
 
-display_t g_display0_cfg;
 
 void timer_tick_callback(void * pdata)
 {
@@ -26,18 +23,13 @@ void timer_tick_callback(void * pdata)
 
 void main_task_user(void *pvParameters)
 {
-
 	_Bool ret;
 	uint32_t channel;
-
-	g_display0_cfg.input->format = LCD_CH0_IN_GR2_FORMAT;
 
     /* Create all other application tasks here */
 	lv_init();
 
-	lv_port_disp_init();
-
-	lv_port_indev_init();
+	board_init();
 
 #if (1 == LV_USE_DEMO_BENCHMARK)
 	lv_demo_benchmark();
