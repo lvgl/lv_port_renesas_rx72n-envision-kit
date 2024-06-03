@@ -998,7 +998,7 @@
 									<listOptionValue builtIn="false" value="&quot;src/FreeRTOS/Source/stream_buffer.o&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;src/FreeRTOS/Source/tasks.o&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;src/FreeRTOS/Source/timers.o&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;src/RX72N_EnVision_LVGL.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;src/LVGL_thread_entry.o&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;src/hal_data.o&quot;"/>
 								</option>
 							</tool>
