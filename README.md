@@ -2,26 +2,13 @@
 
 ## Overview
 
-???
-The EK-RA6M3G evaluation kit enables users to seamlessly evaluate the features of the RA6M3 MCU Group and develop embedded systems applications using Renesas’ Flexible Software Package (FSP) and e2 studio IDE. Utilize rich on-board features along with your choice of popular ecosystem add-ons to bring your big ideas to life.
+Equipped with 32-bit microcomputer, RX family flagship RX72N is an excellent choice for GUI creation using LCD, HMI development such as voice input/output, and IoT device development using Wi-Fi, BLE or Ethernet. By using LVGL's demo repository with Renesas' ecosystem, you can experience immediately and develop quickly.
 
-The MCU has a high-performance Arm Cortex-M4 core and offers a TFT controller with 2D accelerator and JPEG decoder. Additionally, it has Ethernet MAC with individual DMA and USB high-speed interface to ensure high data throughput
-???
+The IC is equipped with the third-generation RX CPU core, the RXv3, and an internal networking of peripheral allowing real-time control high-performance with a single chip. The device also has complete security capability, vital for industrial and consumer equipment today.
 
 ## Buy
 
 You can purchase the Renesas RX72N Envision Kit from many distributors. See the sources at https://www.renesas.com/rx72n-envision-kit
-
-## Benchmark
-
-???
-During the benchmark 2 frame buffer were used in the external SRRAM. LVGL was configured to `LV_DISPLAY_RENDER_MODE_DIRECT` and the buffer were swapped on VSYNC to avoid tearing.
-???
-
-As observed in the video ...
-
-Check out RX72N in action, running LVGL's benchmark demo:
-[![image](https://github.com/lvgl/lv_renesas/assets/7599318/a0a0dc0a-f96f-410a-ba71-555b3a788b61)](https://www.youtube.com/embed/LHPIqBV_MGA)
 
 ## Specification
 
@@ -55,18 +42,13 @@ The board is equipped with many communication interfaces, including (but not lim
 - Set both channels of SW1 (next to ECN1) to OFF
 
 ### Software setup
-- Install the proper drivers
-    - for Windows: [64 bit here](https://www.renesas.com/us/en/document/uid/usb-driver-renesas-mcu-tools-v27700-64-bit-version-windows-os?r=488806) and [32 bit here](https://www.renesas.com/us/en/document/uid/usb-driver-renesas-mcu-toolse2e2-liteie850ie850apg-fp5-v27700for-32-bit-version-windows-os?r=488806)
-    - for Linux: [here](https://www.renesas.com/us/en/document/swo/e2-emulator-e2-emulator-lite-linux-driver?r=488806)
-- Install a compiler for the RX family. A free and open-source version is available [here](https://llvm-gcc-renesas.com/rx-download-toolchains/) after a registration.
-- Install the [JLink driver](https://www.segger.com/downloads/jlink/) if not installed yet. 
-- Install [Renesas E2 Studio](https://www.renesas.com/us/en/software-tool/e-studio)
+- You can clone the repository with the following command:
+    ```
+    git clone https://github.com/lvgl/lv_port_renesas_rx72n-envision-kit.git --recurse-submodules
+    ```
+    Downloading the `.zip` from GitHub doesn't work as it doesn't download the submodules.
 
-### Run the project
-Step-by-step description of setting up the project can be found in [the official LVGL documentation](https://docs.lvgl.io/master/integration/chip/renesas.html#getting-started-with-lvgl).
-
-### Debugging
-- JLink VCOM port is not available, but e2 studio provides a feature rich debugging experience.
+- Follow the *RX family* section of the [*documentation*](https://docs.lvgl.io/master/integration/chip/renesas.html#get-started-with-the-renesas-ecosystem) to prepare your environment and import the project
 
 ## Contribution and Support
 
