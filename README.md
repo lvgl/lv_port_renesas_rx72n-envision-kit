@@ -6,6 +6,13 @@ Equipped with 32-bit microcomputer, RX family flagship RX72N is an excellent cho
 
 The IC is equipped with the third-generation RX CPU core, the RXv3, and an internal networking of peripheral allowing real-time control high-performance with a single chip. The device also has complete security capability, vital for industrial and consumer equipment today.
 
+## Benchmark
+
+[![image](https://github.com/lvgl/lv_port_renesas_rx72n-envision-kit/assets/7599318/43f682f4-515a-449c-92dc-7eb2383643d1)
+](https://www.youtube.com/watch?v=__56v8DsfH0)
+
+
+
 ## Buy
 
 You can purchase the Renesas RX72N Envision Kit from many distributors. See the sources at https://www.renesas.com/rx72n-envision-kit
