@@ -1,0 +1,43 @@
+{
+    "name": "Renesas RX72N Envision Kit",
+    "maintainer": "LVGL",
+    "hostOperatingsystem": [
+        "Linux",
+        "Windows",
+        "MacOS"
+    ],
+    "environment": [
+        "e2 studio",
+        "GCC"
+    ],
+    "hardware": {
+        "chipVendor": "Renesas",
+        "manufacturer": "Renesas",
+        "specs": {
+            "MCU": "R5F572NNHDFB (RXv3, 240MHz)",
+            "RAM": "1MB internal SRAM",
+            "Flash": "4MB internal, 32MB external QSPI Flash",
+            "GPU": "Dave2D",
+            "Resolution": "480x272",
+            "Display Size": "4.3”",
+            "Interface": "Parallel RGB",
+            "Color Depth": "RGB565",
+            "Technology": "TFT-LCD, Transmissive",
+            "DPI": "128 px/inch",
+            "Touch Pad": "Capacitive"
+        }
+    },
+    "description": "Equipped with 32-bit microcomputer, RX family flagship RX72N is an excellent choice for GUI creation using LCD, HMI development such as voice input/output, and IoT device development using Wi-Fi, BLE or Ethernet. By using LVGL's demo repository with Renesas' ecosystem, you can experience immediately and develop quickly. The IC is equipped with the third-generation RX CPU core, the RXv3, and an internal networking of peripheral allowing real-time control high-performance with a single chip. The device also has complete security capability, vital for industrial and consumer equipment today.",
+    "shortDescription": "240 MHz driving a 480x272 display.",
+    "urlToClone": "https://github.com/lvgl/lv_port_renesas_ek-ra8d1_gcc",
+    "logos": [
+        "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
+    ],
+    "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas_rx72n-envision-kit/master/board_images/renesas-rx72n-envision-kit.webp",
+    "buy_now_links": [
+        "https://renesas.com/rx72n-envision-kit"
+    ],
+    "branches": [
+        "release/v9.2"
+    ]
+}
