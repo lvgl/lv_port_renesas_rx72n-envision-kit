@@ -44,6 +44,14 @@ The board is equipped with many communication interfaces, including (but not lim
 
 ## Getting started
 
+### Dependencies setup:
+ 
+- Install the Renesas E2Studio for RX platform from: https://www.renesas.com/en/software-tool/e2studio-information-rx-family 
+- Keep in mind that you need the specific software tools for the RX platform, plain `E2Studio` will not be able to compile the application.
+- Additionally you can also use the stand-alone GNU-RX from here: https://llvm-gcc-renesas.com/rx-download-toolchains/
+- After that you can select the installed toolchain via the Renesas Toolchain Manager in the View menu.
+
+
 ### Hardware setup
 - Connect the USB cable to the `Debug` (ECN1) connector, next to the Ethernet port.
 - Set both channels of SW1 (next to ECN1) to OFF
